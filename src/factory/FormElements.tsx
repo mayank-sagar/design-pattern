@@ -5,7 +5,7 @@ export default class FormElements implements Element {
     elements: Element[]
     schema: Yup.ObjectSchema<any, Yup.AnyObject, any, ""> | null
 
-    constructor(elements: Element[], schema:  | null) {
+    constructor(elements: Element[], schema:  Yup.ObjectSchema<any, Yup.AnyObject, any, ""> | null) {
         this.elements = elements
         this.schema = schema 
     }

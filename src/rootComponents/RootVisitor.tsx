@@ -1,4 +1,4 @@
-import { FC, useMemo, useState } from 'react'
+import { FC, useState } from 'react'
 import { FOODS } from './food';
 import Food from '../Visitor/Concrete/Food';
 import Luxury from '../Visitor/Concrete/Luxury';
