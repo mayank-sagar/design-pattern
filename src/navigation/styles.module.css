@@ -1,0 +1,39 @@
+.mainScreenContainer {
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    position: relative;
+    z-index: 2;
+}
+
+
+.mainScreenBackground{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    background-image: url('/images/main-screen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.35;
+}
+.mainScreenContainer li {
+    font-family: 'Frijole', cursive;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--default-color);
+}
+
+.mainScreenContainer li:hover {
+    color: var(--primary-color);
+} 

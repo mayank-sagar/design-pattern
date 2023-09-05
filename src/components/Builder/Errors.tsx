@@ -5,7 +5,7 @@ const Errors: FC<{ name: string, value: string, schema: ValidationBuilder}> = ({
      const errorText = useMemo(() => {
         const validations = schema.get()
         const rule = validations[name]?.find((validator) => !validator.value.validate(value))
-        return rule ? rule.value.getMessage() : "valid "+name
+        return rule ? rule.value.getMessage() : ""
     },[value])
     return (<div>{errorText}</div>)
 }

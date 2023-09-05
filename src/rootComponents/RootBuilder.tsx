@@ -27,19 +27,24 @@ const buildValidation = (e: {target: HTMLInputElement}) => {
         }
 }
 return (<>
-<div>
+<div className='card'>
+    <div className='card-body'>
     Required <input type="checkbox" value="required" onChange={buildValidation} /> <br/>
     Max length 20 <input type="checkbox" value="max" onChange={buildValidation} /> <br/>
     No special characters <input type="checkbox" value="no-special" onChange={buildValidation} /> <br/>
     <br/>
-    <input onBlur={() => setIsTouched(true)} value={value} onChange={(e) => setValue(e.target.value)}/>
+    <label>Enter your name</label><br/>
+    <input placeholder="Enter name..." onBlur={() => setIsTouched(true)} value={value} onChange={(e) => setValue(e.target.value)}/>
     {
         isTouched ?    
          <Errors 
          value={value} name='name' schema={validation}></Errors>
             : null
     }
+  </div>
+  
 </div>
+
 </>)
 }
 

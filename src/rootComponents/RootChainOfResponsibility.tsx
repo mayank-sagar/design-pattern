@@ -19,16 +19,17 @@ const RootChainOfResponisibilty: FC<{}>  = ({}) => {
         const color = chain.compute(new Payload(e.target.value))
         document.body.style.background  = color
     }
-    return <>
-    <select
-    onChange={handleOnChangeSelect}
-    >
-            <option value="">Select your mood.</option>
-            <option value="sad">Sad</option>
-            <option value="happy">Happy</option>
-            <option value="calm">Calm</option>
-    </select>
-    </>
+    return <div className="card">
+        <div className="card-body">
+            <label> Select Your mood. </label> <br/>
+            <select onChange={handleOnChangeSelect}>
+                <option value="">Select your mood.</option>
+                <option value="sad">Sad</option>
+                <option value="happy">Happy</option>
+                <option value="calm">Calm</option>
+            </select>
+        </div>
+    </div>
 }
 
 export default RootChainOfResponisibilty;

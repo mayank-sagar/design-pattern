@@ -1,3 +1,9 @@
+:root {
+	--primary-color: #007376;
+	--secondary-color: #969393;
+	--default-color: #000;
+}
+
 #root {
 		width: 100%;
 		display: block;
@@ -67,4 +73,11 @@
 	border-color: #d63031;
 	color: #d63031;
 	outline: none;
+}
+
+.active {
+	background-color: var(--primary-color);
+}
+.list-group .list-group-flush li {
+	cursor: pointer;
 }

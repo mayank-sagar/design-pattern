@@ -9,9 +9,14 @@ const RootAdapter: FC<{}> = ({}) => {
         return new UserAdapter(value).isValidResource()
     },[value])
 
-    return (<div>
-        <input onBlur={() => setIsTouched(true)} value={value} onChange={(e) => setValue(e.target.value)} type="text"></input>
+    return (<div className="card">
+        <div className="card-body">
+        <label>Username</label><br/>
+        <input 
+        placeholder="Enter User name..."
+        onBlur={() => setIsTouched(true)} value={value} onChange={(e) => setValue(e.target.value)} type="text"></input>
         {isTouched && !isValid ? <span> Username is not valid </span>: null}
+        </div>
     </div>)
 }
 

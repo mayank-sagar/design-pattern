@@ -22,17 +22,5 @@ export default class TaxVisitor implements Visitor{
         return 0;
 
     }
-    // : number {
-    //     return item.price * 0.5;
-    // }
-
-    // visitor(item: Luxury): number {
-    //     return item.price * 0.25;
-    // }
-
-    // visitor(item: Services) : number {
-    //     return item.price * 0.12;
-
-    // }
 
 }

@@ -2,9 +2,11 @@ import Visitor from '../Visitor';
 import Vistable from '../Vistable'
 class Food implements Vistable {
     price = 0;
+    name = '';
     
-    constructor(price:number) {
+    constructor(name: string, price:number) {
         this.price  = price
+        this.name = name
     }
 
     accept(v: Visitor): number  {

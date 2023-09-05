@@ -21,7 +21,7 @@ export default class FormikFormElements implements Element {
     getJsx() {
         return (
             <>
-            <h2 className='text-center'>Formik</h2>
+            <h3 className="card-title text-center">Formik</h3>
             <Formik
                 initialValues={this.initalValues}
                 validationSchema={this.schema}

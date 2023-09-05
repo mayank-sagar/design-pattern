@@ -12,8 +12,8 @@ export default class FormElements implements Element {
     
     getJsx() {
         return (
-            <>
-        <h2 className='text-center'>Html Form</h2>
+        <>
+        <h3 className="card-title text-center">Html Form</h3>
         <form>
              <div 	className="form-container">
             {this.elements.map(el => el.getJsx())}

@@ -5,6 +5,7 @@ import RootAdapter  from '../rootComponents/RootAdapter'
 import RootChainOfResponsibility  from '../rootComponents/RootChainOfResponsibility'
 
 import React  from 'react';
+import RootVisitor from '../rootComponents/RootVisitor'
 export const menuFactory = (id: Navigation) => {
     switch(id) {
         case Navigation.ABSTRACT_FACTORY:
@@ -15,6 +16,8 @@ export const menuFactory = (id: Navigation) => {
             return RootAdapter;
         case Navigation.CHAIN_OF_RESPONSIBILITY:
             return RootChainOfResponsibility;
+        case Navigation.VISITOR:
+            return RootVisitor
     }
     return React.Fragment;
 }
